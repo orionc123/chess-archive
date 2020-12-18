@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html> 
    <head><title>Chess Archive</title></head> 
    <body>
