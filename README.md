@@ -1,8 +1,4 @@
-"# chess-archive" 
+
 #
 #
-#
-#
-#
-#
-# click here ->
+                                                             click here ->
