@@ -8,6 +8,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Chess Archive</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .block {
+            padding-bottom: 10px;
+        }
+
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item{
+            padding-right: 10px;
+        }
+    </style>
 </head>
 <body style="background-color: hsl(210, 15%, 35%);">
 
@@ -47,12 +62,14 @@
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                    aria-expanded="false">Accounts</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" target="_blank" href="https://lichess.org/@/eatingsomebagels">Lichess</a>
+                    <a class="dropdown-item" target="_blank" href="https://lichess.org/@/eatingsomebagels">lichess.org</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" target="_blank" href="https://www.chess.com/member/eatingsomebagels">Chess.com -
+                    <a class="dropdown-item" target="_blank" href="https://www.chess.com/member/eatingsomebagels">Chess.com
+                        -
                         Main</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" target="_blank" href="https://www.chess.com/member/worstbehaviorpawn">Chess.com -
+                    <a class="dropdown-item" target="_blank" href="https://www.chess.com/member/worstbehaviorpawn">Chess.com
+                        -
                         Worst Behaviour</a>
                 </div>
             </li>
@@ -60,12 +77,80 @@
     </div>
 </nav>
 
-<iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
-        width=600 height=397 style="border: black"></iframe>
-<div>
-    <span class="badge badge-primary">Black</span>
-    <span class="badge badge-primary">Kings Indian</span>
-    <span class="badge badge-primary">Quick Mate</span>
+
+<div class="iframe-container">
+<!--    ROW 1-->
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    ROW 2-->
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-primary">Kings Indian</span>
+                    <span class="badge badge-primary">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
