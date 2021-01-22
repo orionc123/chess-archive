@@ -3,9 +3,8 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css"
           integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Chess Archive</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <style>
@@ -18,10 +17,27 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .nav-item{
             padding-right: 10px;
         }
+
+        .puzzle{
+            align-content: center;
+        }
+
+        h1{
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        iframe{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
     </style>
 </head>
 <body style="background-color: hsl(210, 15%, 35%);">
@@ -36,27 +52,27 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home
+                <a class="nav-link" href="#home">Home
                     <span class="sr-only">(current)</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sicilian</a>
+                <a class="nav-link" href="#sicilian">Sicilian</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Kings Indian</a>
+                <a class="nav-link" href="#kings-indian">Kings Indian</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Queens Gambit</a>
+                <a class="nav-link" href="#queens-gambit">Queens Gambit</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Evans Gambit</a>
+                <a class="nav-link" href="#evans-gambit">Evans Gambit</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Scotch Game</a>
+                <a class="nav-link" href="#scotch-game">Scotch Game</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pure Aggression</a>
+                <a class="nav-link" href="#pure-aggression">Pure Aggression</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
@@ -76,10 +92,19 @@
         </ul>
     </div>
 </nav>
+<br>
+
+<!--<h1 id="home">Puzzle of the Day</h1>-->
+<!--<hr>-->
+
+<!--<div class="puzzle">-->
+<!--    <iframe src="https://lichess.org/training/frame?theme=blue&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>-->
+<!--</div>-->
 
 
 <div class="iframe-container">
-<!--    ROW 1-->
+    <!--    ROW 1-->
+    <h2 id="sicilian">Sicilian</h2>
     <div class="row">
         <div class="col-4">
             <div class="block">
@@ -87,8 +112,8 @@
                         width=600 height=397 style="border: black"></iframe>
                 <div>
                     <span class="badge badge-primary">Black</span>
-                    <span class="badge badge-primary">Kings Indian</span>
-                    <span class="badge badge-primary">Quick Mate</span>
+                    <span class="badge badge-dark">Kings Indian</span>
+                    <span class="badge badge-success">Quick Mate</span>
                 </div>
             </div>
         </div>
@@ -97,9 +122,9 @@
                 <iframe src="https://lichess.org/embed/E9bPdqWr?theme=blue&bg=dark"
                         width=600 height=397 style="border: black"></iframe>
                 <div>
-                    <span class="badge badge-primary">White</span>
-                    <span class="badge badge-primary">Pure Aggression</span>
-                    <span class="badge badge-primary">Many Blunders</span>
+                    <span class="badge badge-light">White</span>
+                    <span class="badge badge-dark">Pure Aggression</span>
+                    <span class="badge badge-danger">Many Blunders</span>
                 </div>
             </div>
         </div>
@@ -108,14 +133,15 @@
                 <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
                         width=600 height=397 style="border: black"></iframe>
                 <div>
-                    <span class="badge badge-primary">White</span>
+                    <span class="badge badge-secondary">White</span>
                     <span class="badge badge-primary">Pure Aggression</span>
                     <span class="badge badge-primary">Many Blunders</span>
                 </div>
             </div>
         </div>
     </div>
-<!--    ROW 2-->
+    <!--    ROW 2-->
+    <h2 id="kings-indian">Kings Indian</h2>
     <div class="row">
         <div class="col-4">
             <div class="block">
@@ -151,6 +177,158 @@
             </div>
         </div>
     </div>
+    <!--    ROW 3-->
+    <h2  id="queens-gambit">Queens Gambit</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-dark">Kings Indian</span>
+                    <span class="badge badge-success">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/E9bPdqWr?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-light">White</span>
+                    <span class="badge badge-dark">Pure Aggression</span>
+                    <span class="badge badge-danger">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-secondary">White</span>
+                    <span class="badge badge-primary">Pure Aggression</span>
+                    <span class="badge badge-primary">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    ROW 4-->
+    <h2 id="evans-gambit">Evans Gambit</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-dark">Kings Indian</span>
+                    <span class="badge badge-success">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/E9bPdqWr?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-light">White</span>
+                    <span class="badge badge-dark">Pure Aggression</span>
+                    <span class="badge badge-danger">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-secondary">White</span>
+                    <span class="badge badge-primary">Pure Aggression</span>
+                    <span class="badge badge-primary">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    ROW 5-->
+    <h2 id="scotch-game">Scotch Game</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-dark">Kings Indian</span>
+                    <span class="badge badge-success">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/E9bPdqWr?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-light">White</span>
+                    <span class="badge badge-dark">Pure Aggression</span>
+                    <span class="badge badge-danger">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-secondary">White</span>
+                    <span class="badge badge-primary">Pure Aggression</span>
+                    <span class="badge badge-primary">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    ROW 6-->
+    <h2 id="pure-aggression">Pure Aggression</h2>
+    <div class="row">
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-primary">Black</span>
+                    <span class="badge badge-dark">Kings Indian</span>
+                    <span class="badge badge-success">Quick Mate</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/E9bPdqWr?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-light">White</span>
+                    <span class="badge badge-dark">Pure Aggression</span>
+                    <span class="badge badge-danger">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="block">
+                <iframe src="https://lichess.org/embed/8SUSY6hB?theme=blue&bg=dark"
+                        width=600 height=397 style="border: black"></iframe>
+                <div>
+                    <span class="badge badge-secondary">White</span>
+                    <span class="badge badge-primary">Pure Aggression</span>
+                    <span class="badge badge-primary">Many Blunders</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<footer class="blockquote-footer">
+    Developed by Orion Carroll 2021
+</footer>
 </body>
 </html>
